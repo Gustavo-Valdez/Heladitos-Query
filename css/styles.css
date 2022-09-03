@@ -121,6 +121,14 @@ body {
     background-image: url('../imagenes/animal_d.jpg');
 }
 
+#animal_e {
+    background-image: url('../imagenes/animal_e.jpg');
+}
+
+#animal_f {
+    background-image: url('../imagenes/animal_f.jpg');
+}
+
 .slide-full {
     width: 100%;
 }

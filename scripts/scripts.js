@@ -20,28 +20,43 @@ function getIceCream(data) {
   var image = getImage(data);
   var title;
   var color;
+  var texto;
   switch (data) {
     case 'animal_a':
       title= "Azul"
       color= "#70cef8"
+      texto= "Delicioso"
     break;
     case 'animal_b':
       title= "Pistache"
       color= "#c0d774"
+      texto= "Rico"
     break;
     case 'animal_c':
       title= "Chocolate"
       color= "#9a7b6e"
+      texto= "Hermoso"
     break;
     case 'animal_d':
       title= "Guayaba"
       color= "#e78d9a"
+      texto= "Bello"
+    break;
+    case 'animal_e':
+      title= "Vainilla"
+      color= "#dbce79"
+      texto= "Delicia"
+    break;
+    case 'animal_f':
+      title= "Nuez"
+      color= "#cc982a"
+      texto= "Favorito"
     break;
     default:
     title=Azul;
     color="#70cef8"
   }
-  return ({titulo:title, color:color, imagen:image})
+  return ({titulo:title, color:color, imagen:image, texto:texto})
 }
 
 $(document).on("click",".button-container button",function(){
@@ -64,6 +79,7 @@ $(document).on("click", ".animal-btn", function(){
    <div class="pop-container">
       <div class="animal-icecream" style="background-image:url(` +array.imagen+` )"></div>
       <h1 style="color: ` +array.color+ ` ">`+array.titulo+`</h1>
+      <h2 style="color: ` +array.color+ ` ">`+array.texto+`</h2>
       <button>Salir</button>
     </div>
   </div>`;
