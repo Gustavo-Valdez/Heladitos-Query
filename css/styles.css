@@ -1,0 +1,10 @@
+:root {
+    --naranja: #ff8400;
+    --morado: #6d3db2;
+    --amarillo: #ffc000;
+    --blanco:#fff;
+}
+
+body {
+    background-color: red;
+}
